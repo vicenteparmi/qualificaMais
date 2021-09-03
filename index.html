@@ -1,16 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <div id=interface>
-       <header id="cabecalho">
 
-       </header>
-       
-   </div> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAVORA | Comida & Cultura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <img src="imagens/logo.svg" alt="Logo FLAVORA" id="logo">
+        <!--menu-->
+        <nav id="menu">
+            <li class="selected">Início</li>
+            <li>Equipe</li>
+            <li>Blog</li>
+            <li>Contato</li>
+        </nav>
+        <!-- conteudo do cabeçalho -->
+    </header>
+    <div id=interface>
+        <h2>Publicações recentes</h1>
+        <div style="display: flex;">
+            <div class="cardRecent">
+                <img src="imagens/italiana.jpg" alt="Prato típico italiano.">
+                <div>
+                    <h3>Culinária Italiana</h3>
+                    <p>Muitas pizzas e massas. Sabores incríveis direto de casa.</p>
+                </div>       
+            </div>
+            <div class="cardRecent">
+                <img src="imagens/japao.jpg" alt="Prato típico japonês.">
+                <div>
+                    <h3>Culinária Japonesa</h3>
+                    <p>A culinária onde os frutos do mar possuem um destaque especial.</p>
+                </div>       
+            </div>
+            <div class="cardRecent">
+                <img src="imagens/india.jpg" alt="Prato típico indiano.">
+                <div>
+                    <h3>Culinária Indiana</h3>
+                    <p>Sabores muito distintos do ocidente, fazendo um ótimo uso das especiarias da região.</p>
+                </div>       
+            </div>
+            <div class="cardRecent more">
+                <h2>Ver todos</h2>    
+            </div>
+        </div>
+        <!-- <section id="1blog">
+            <h2>Culinária Italiana</h2>
+            <img src="imagens/images italia.jpg" />
+            A culinária italiana evoluiu através dos séculos, ao longo das mais variadas alterações sociais e políticas;
+            suas raízes podem ser traçadas até o século IV a.C. Mudanças significantes ocorreram com a descoberta do
+            Novo Mundo, que ajudaram a moldar muito do que é conhecido como a culinária italiana hoje em dia, através da
+            introdução de ingredientes como batatas, tomates, pimentões e milho, todos eles parte central da cozinha
+            daquele país, e que no entanto só foram introduzidos em grande escala a partir do século XVIII
+
+            É uma das culinárias mais populares do mundo, com suas pizzas, massas, vinhos e outros tipos de preparações.
+            Tanto ingredientes como pratos mudam de região para região do país. Existem diversos pratos regionais
+            importantes que também assumiram caráter nacional, enquanto diversos pratos proliferaram, em diversas
+            variantes, por todo o mundo. Queijo e vinho são uma parte importantíssima da cozinha do país, desempenhando
+            diferentes papeis tanto regionalmente quanto nacionalmente, com sua grande variedade e leis de
+            regulamentação. Também o café, mais especificamente o espresso, assumiu um papel de destaque relevante na
+            cultura gastronômica da Itália.
+
+            Pratos típicos de algumas regiões
+            <p>Spaghetti</p>
+            Região: Campania
+            O spaghetti pode ser servido com uma variedade de molhos, o mais comum é com molho de tomate com queijo
+            ralado e folhas de manjericão.
+            <p>Tortellini´</p>
+            Região: Emília Romana
+            Massa feita com farinha de trigo e ovos, e recheada com carne de gado, de porco e queijo.
+            <p>Penne</p>
+            Regiões: Campania e Sicilia
+            Massa em formato cilíndrico liso ou com listras. Em geral são preparados ao molho vermelho ou pesto.
+            <p>Grissini</p>
+            Região: Piemonte
+            Biscoito criado em 1679, feito com farinha de trigo, azeite de oliva e água.
+            <p>Ravioli</p>
+            Região: Basilicata, Emília Romana, Lazio, Marche, Piemonte, Toscana e Lombardia.
+            Massa feita com farinha de trigo e ovos com diversos tipos de recheio.
+            <p>Polenta</p>
+            Região: Norte da Itália
+            A polenta que é feita à base de farinha de milho e água é historicamente conhecida na Itália como prato dos
+            pobres.
+            <p>Tiramisù</p>
+            Região: Vêneto
+            Doce muito famoso, feito com bolacha champagne, mascarpone, café e ovo.
+            <p>Orecchietti</p>
+            Regiões: Puglia e Basilicata
+            Macarrão feito com farinha de grano duro com formato de orelhinhas.
+
+        </section>
+
+        <h2>Culinária Japonesa</h2>
+        <img src="imagens/imagem japao.jpg" />
+        <p>A culinária tradicional japonesa consiste em pratos preparados de arroz, sopa de misso (pasta de soja),
+            peixe ou carne acompanhados de tsukemono (picles). Os temperos mais comuns na cozinha japonesa são o
+            shoyu (molho de soja), o wasabi (raiz forte), o misso (pasta de soja), o karashi (mostarda), mirin e
+            sake (bebida alcoólica a base de arroz) e dashi (caldo de peixe ou carne).</P>
+        Pelo fato do Japão ser um país formado por ilhas, os japoneses criaram o hábito de utilizar o mar como fonte
+        de alimento de onde retiram diversos tipos de peixes, moluscos e algas marinhas. O peixe é muito apreciado
+        na culinária japonesa e consiste uma importante fonte de nutrição. Ele é o ingrediente fundamental no
+        preparo de pratos típicos como o sashimi (peixe cru) e o sushi (pequenos bocados de arroz temperados com
+        vinagre cobertos com fatias de peixe cru).</P>
+        <p>A carne foi introduzida no Japão no século 19, até então não fazia parte da dieta tradicional japonesa.
+            Foram criados novos pratos utilizando carne bovina, suína e de frango. Atualmente, o yakitori
+            (espetinhos de frango grelhado) são muito populares, assim como o sukiyaki que consiste em finas fatias
+            de carne preparadas junto com verduras e tofu (queijo de soja).</P>
+        Apesar do macarrão ser originário da China, tornou-se muito popular no Japão. Existem vários tipos de
+        macarrão, e dentre as variedades mais consumidas estão o soba (macarrão de trigo sarraceno), o udon e somen
+        (macarrão de trigo) . O lamen , um dos pratos mais populares no Japão, é preparado com caldo e servido com
+        vegetais e fatias de carne, também é possível preparar o famoso yakissoba (macarrão frito) com o mesmo tipo
+        de macarrão.</P>
+        <p>A bebida predileta dos japoneses é o chá verde. É servido durante as refeições ou em reunião de pessoas
+            da mesma forma que o " cafezinho" do povo brasileiro. Pode-se dizer que o chá verde está para o povo
+            japonês, assim como o "cafezinho" está para o povo brasileiro.</P>
+        Outras bebidas populares no Japão são o chá preto, o saquê (vinho de arroz), o shochu (aguardente de arroz)
+        e umeshu (licor de ameixa).</P>
+
+        <h2>Culinária Indiana</h2>
+        <img src="imagens/india.jpg" />
+        <p>A culinária da Índia é considerada uma das culinárias mais diversificadas do mundo.
+
+            A imigração extensiva e a mistura de culturas por muitos milênios introduziram muitas influências
+            alimentares e culturais.
+
+            O clima “bipolar” da Índia, que vai do tropical ao frio, disponibilizou uma ampla variedade de
+            ingredientes para as muitas escolas de culinária que existem por lá.
+
+            Em muitos casos, a comida se tornou um marcador de identidade religiosa e social, com vários tabus e
+            preferências.
+
+            Um exemplo disso é que um segmento da população jainista não consome raízes ou vegetais subterrâneos,
+            isso levou certos grupos a inovar radicalmente com as fontes alimentares consideradas aceitáveis.
+
+            O vegetarianismo a longa data entre as secções da Índia ‘s hindus, budistas e jainistas têm exercido uma
+            forte influência sobre a culinária indiana.
+
+            As pessoas que seguem uma dieta vegetariana rigorosa representam de 20 a 42 por cento da população
+            indiana, enquanto menos de 30 por cento consomem carne regularmente.</p>
+        Conheça abaixo algumas curiosidades sobre a culinária indiana:
+
+        <p>A Índia é justamente chamada de Terra das Especiarias. Nenhum país do mundo produz tantas variedades de
+            especiarias quanto a Índia.
+            Comerciantes gregos, romanos e árabes contribuíram muito para os primeiros sabores estrangeiros da
+            culinária indiana.
+            Os principais ingredientes utilizados na culinária indiana, como batata, tomate e pimenta, não têm
+            origem indiana. Eles foram trazidos para a Índia pelos portugueses.
+            O primeiro restaurante indiano nos EUA foi aberto em meados da década de 1960. Hoje, existem cerca de
+            80.000 restaurantes indianos na América.
+            Pouco se sabe sobre os hábitos alimentares da primeira civilização indiana, (a Civilização do Vale do
+            Indo), porque o idioma antigo ainda não foi decifrado.
+            A pimenta é conhecida como o rei das especiarias, porque combina bem com tudo.
+            O sistema alimentar indiano classifica os alimentos em três categorias – saátvico (legumes frescos e
+            suco), raajsic (comida oleosa e picante) e taamsico (carne e licor).
+            O alimento saátvico leva você à estados mais elevados de consciência. O alimento raajsic é a base da
+            atividade e do movimento. A comida taamsica traz sentimentos negativos.</p> -->
+        <footer id="rodape">
+            <a href="https://www.google.com/search?q=instagram&oq=istagram&aqs=chrome.1.69i57j0i10i131i433l2j0i131i433l2j0i10i131i433l3j0i131i433l2.2700j0j7&sourceid=chrome&ie=UTF-8"
+                target="_blank"><img src="imagens/inst.vn.jpg" /> </a>
+
+            <p>copyryght 2021 by sem nome
+            <p>
+        </footer>
+    </div>
 </body>
+
 </html>

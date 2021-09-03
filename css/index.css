@@ -1,0 +1,53 @@
+:root {
+    --primary: #297373;
+    --secondary: #FF8552;
+    --ter: #E9D758;
+    --ter-light: #e7e2bc;
+    --light: #E6E6E6;
+    --dark: #39393A;
+}
+
+#interface {
+    margin: 5vw;
+}
+
+.cardRecent {
+    width: 20vw;
+    height: 25vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28);
+    border-radius: 16px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.cardRecent:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.28);
+}
+
+.cardRecent img {
+    width: inherit;
+    border-radius: 16px;
+}
+
+.cardRecent div {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.cardRecent div p {
+    margin: 0;
+}
+
+.cardRecent.more {
+    box-shadow: none;
+    background-color: var(--ter-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardRecent.more h2 {
+    font-weight: 900;
+}

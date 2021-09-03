@@ -1,0 +1,47 @@
+:root {
+    --primary: #297373;
+    --secondary: #FF8552;
+    --ter: #E9D758;
+    --light: #E6E6E6;
+    --dark: #39393A;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    font-family: 'Raleway', 'Roboto', sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+#logo {
+    width: 124px;
+}
+
+nav {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5vw;
+    font-size: 16pt;
+}
+
+nav li {
+    display: block;
+    margin: 8px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+nav li:hover {
+    background-color: hsl(0deg, 0%, 85%);
+}
+
+nav li.selected {
+    background-color: var(--secondary);
+    color: var(--light);
+}
