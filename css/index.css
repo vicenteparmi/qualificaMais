@@ -1,14 +1,15 @@
 :root {
     --primary: #297373;
-    --secondary: #FF8552;
-    --ter: #E9D758;
-    --ter-light: #e7e2bc;
+    --secondary: #ff3c38;
+    --ter: #FF8C42;
+    --ter-light: #ffc5a1;
     --light: #E6E6E6;
     --dark: #39393A;
 }
 
-#interface {
-    margin: 5vw;
+section {
+    padding-left: 5vw;
+    padding-bottom: 48px;
 }
 
 .cardRecent {
@@ -36,6 +37,10 @@
     margin-right: 16px;
 }
 
+.cardRecent div h3 {
+    color: var(--dark);
+}
+
 .cardRecent div p {
     margin: 0;
 }
@@ -50,4 +55,24 @@
 
 .cardRecent.more h2 {
     font-weight: 900;
+}
+
+#sectionImage {
+    width: 30vw;
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28);
+    margin-left: 8vw;
+}
+
+#nossaH {
+    display: flex;
+    align-items: flex-start;
+}
+
+#nossaH div p {
+    text-align: justify;
+}
+
+strong, h1, h2, h3, h4 {
+    color: var(--secondary);
 }

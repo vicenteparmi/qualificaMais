@@ -1,7 +1,8 @@
 :root {
     --primary: #297373;
-    --secondary: #FF8552;
-    --ter: #E9D758;
+    --secondary: #ff3c38;
+    --ter: #FF8C42;
+    --ter-light: #ffc5a1;
     --light: #E6E6E6;
     --dark: #39393A;
 }
@@ -10,6 +11,7 @@ body {
     background-color: var(--light);
     color: var(--dark);
     font-family: 'Raleway', 'Roboto', sans-serif;
+    margin: 0;
 }
 
 #cabecalho {
@@ -29,19 +31,62 @@ nav {
     font-size: 16pt;
 }
 
-nav li {
+nav a {
     display: block;
     margin: 8px;
     padding: 8px 12px 8px 12px;
     cursor: pointer;
     border-radius: 16px;
+    text-decoration: none;
+    color: var(--dark);
 }
 
-nav li:hover {
+nav a:hover {
     background-color: hsl(0deg, 0%, 85%);
 }
 
-nav li.selected {
+nav a.selected {
     background-color: var(--secondary);
     color: var(--light);
+}
+
+#rodape {
+    text-align: center;
+    background-color: var(--light);
+    padding: 24px;
+    color: var(--primary);
+    margin-top: 64px;
+}
+
+#rodape p {
+    max-width: none;
+    text-align: center;
+}
+
+.aButton {
+    padding: 8px 16px 8px 16px;
+    border-radius: 16px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 24px;
+    position: absolute;
+}
+
+section {
+    padding-left: 5vw;
+    padding-bottom: 48px;
+}
+
+strong, h1, h2, h3, h4 {
+    color: var(--secondary);
+}
+
+td {
+    padding: 8px;
+}
+
+table {
+    max-width: 90vw;
 }
