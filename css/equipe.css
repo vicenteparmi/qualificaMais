@@ -1,0 +1,41 @@
+p {
+    max-width: 85vw;
+    text-align: justify;
+}
+
+#membersHolder {
+    display: flex;
+}
+
+.member {
+    width: 38vw;
+    height: 25vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28);
+    border-radius: 16px;
+    margin-right: 24px;
+    transition-duration: 300ms;
+    text-decoration: none;
+    color: var(--dark);
+    padding: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.member h3 {
+    color: var(--dark);
+}
+
+.member p {
+    margin: 0;
+}
+
+hgroup h2,
+hgroup h3 {
+    margin: 8px;
+}
+
+.fotoMembro {
+    border-radius: 50%;
+    width: 10vw;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28);
+}
