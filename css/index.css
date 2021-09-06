@@ -60,7 +60,7 @@ section {
 }
 
 #sectionImage {
-    width: 30vw;
+    width: 32vw;
     border-radius: 16px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28);
     margin-left: 8vw;
@@ -75,6 +75,10 @@ section {
     text-align: justify;
 }
 
-strong, h1, h2, h3, h4 {
+strong,
+h1,
+h2,
+h3,
+h4 {
     color: var(--secondary);
 }
