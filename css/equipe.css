@@ -34,6 +34,10 @@ hgroup h3 {
     margin: 8px;
 }
 
+hgroup {
+    margin-bottom: 24px;
+}
+
 .fotoMembro {
     border-radius: 50%;
     width: 10vw;
