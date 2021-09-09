@@ -7,9 +7,11 @@
     <title>FLAVORA | Contato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body>
@@ -25,6 +27,46 @@
         <!-- conteudo do cabeçalho -->
     </header>
 
+    <form>
+        <fieldset id="usuario">
+            <legend>Dados principais</legend>
+            <label for="nome">Nome completo: </label>
+            <input type="text" name="nome" id="nome" placeholder="Nome e Sobrenome">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="email@exemplo.com">
+            <br>
+            <label for="tel">Telefone: </label>
+            <input type="tel" name="tel" id="tel" placeholder="(xx) xxxxx-xxxx">
+            <br>
+            <fieldset>
+                <legend>Gênero</legend>
+                <input type="radio" name="sexo" id="masc" value="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sexo" id="fem" value="fem">
+                <label for="fem">Feminino</label>
+                <input type="radio" name="sexo" id="outro" value="other">
+                <label for="outro">Outro</label>
+            </fieldset>
+        </fieldset>
+
+        <fieldset id="endereço">
+            <legend>Endereço</legend>
+            <label for="rua">Endereço: </label>
+            <input type="text" name="rua" id="rua" placeholder="Rua, número e bairro">
+            <br>
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" placeholder="Nome da Cidade">
+            <br>
+            <label for="estado">Estado: </label>
+            <input type="text" name="estado" id="estado" placeholder="Ex.: PR">
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="message" id="message" cols="120" rows="10" placeholder="Escreva aqui a sua mensagem e após clique em enviar."></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
     <footer id="rodape">
         <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" /></a>
         <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png" /></a>
