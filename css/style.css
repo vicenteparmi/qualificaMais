@@ -1,3 +1,4 @@
+/* Define as cores tema da página */
 :root {
     --primary: #297373;
     --secondary: #ff3c38;
@@ -7,6 +8,7 @@
     --dark: #39393A;
 }
 
+/* Define fontes, cor de fundo, do texto e margens */
 body {
     background-color: var(--light);
     color: var(--dark);
@@ -14,16 +16,19 @@ body {
     margin: 0;
 }
 
+/* Como o cabeçalho da página deve se comportar com alinhamento e bordas */
 #cabecalho {
     display: flex;
     justify-content: center;
     padding-top: 24px;
 }
 
+/* Tamanho da logo do cabeçalho */
 #logo {
     width: 124px;
 }
 
+/* Orientação dos elementos na navegação, margens e tamanho da fonte */
 nav {
     display: inline-flex;
     align-items: center;
@@ -31,6 +36,7 @@ nav {
     font-size: 16pt;
 }
 
+/* Correção do padrão de links e estilo do botão */
 nav a {
     display: block;
     margin: 8px;
@@ -41,15 +47,18 @@ nav a {
     color: var(--dark);
 }
 
+/* Comportamento na sobreposição do mouse */
 nav a:hover {
     background-color: hsl(0deg, 0%, 85%);
 }
 
+/* Elemento ativo */
 nav a.selected {
     background-color: var(--secondary);
     color: var(--light);
 }
 
+/* Estilo do rodapé da página */
 #rodape {
     text-align: center;
     background-color: var(--light);
@@ -58,11 +67,13 @@ nav a.selected {
     margin-top: 64px;
 }
 
+/* Parágrafo dos rodapés */
 #rodape p {
     max-width: none;
     text-align: center;
 }
 
+/* Botão de ação padrão */
 .aButton {
     padding: 8px 16px 8px 16px;
     border-radius: 16px;
@@ -74,11 +85,13 @@ nav a.selected {
     position: absolute;
 }
 
+/* Margens das sessões */
 section {
     padding-left: 5vw;
     padding-bottom: 48px;
 }
 
+/* Cor do negrito para os elementos comuns */
 strong,
 h1,
 h2,
@@ -87,14 +100,17 @@ h4 {
     color: var(--secondary);
 }
 
+/* Espaçamento de tabelas */
 td {
     padding: 8px;
 }
 
+/* Espaçamento de tabelas */
 table {
     max-width: 90vw;
 }
 
+/* Tamanho dos ícones de redes sociais no rodapé */
 #rodape a img {
     width: 32px;
     line-height: 36px;

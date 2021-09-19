@@ -1,12 +1,15 @@
+/* Limitação no comprimento do parágrafo */
 p {
     max-width: 85vw;
     text-align: justify;
 }
 
+/* Caixa com os membros */
 #membersHolder {
     display: flex;
 }
 
+/* Bloco do membro */
 .member {
     width: 38vw;
     height: 25vw;
@@ -21,14 +24,17 @@ p {
     text-align: center;
 }
 
+/* Título do membro */
 .member h3 {
     color: var(--dark);
 }
 
+/* Parágrafos dos membros */
 .member p {
     margin: 0;
 }
 
+/* Grupo de título */
 hgroup h2,
 hgroup h3 {
     margin: 8px;
@@ -38,6 +44,7 @@ hgroup {
     margin-bottom: 24px;
 }
 
+/* Tamanho e arredondamento da foto dos membros */
 .fotoMembro {
     border-radius: 50%;
     width: 10vw;

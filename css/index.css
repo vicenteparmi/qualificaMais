@@ -1,3 +1,4 @@
+/* Cores da página */
 :root {
     --primary: #297373;
     --secondary: #ff3c38;
@@ -7,11 +8,13 @@
     --dark: #39393A;
 }
 
+/* Margens da sessão */
 section {
     padding-left: 5vw;
     padding-bottom: 48px;
 }
 
+/* Cards da página inicial */
 .cardRecent {
     width: 20vw;
     height: 25vw;
@@ -24,29 +27,35 @@ section {
     color: var(--dark);
 }
 
+/* Card ao passar o mouse */
 .cardRecent:hover {
     transform: scale(1.05);
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.28);
 }
 
+/* Imagem no interior do card */
 .cardRecent img {
     width: inherit;
     border-radius: 16px;
 }
 
+/* Posição do bloco de texto no card */
 .cardRecent div {
     margin-left: 16px;
     margin-right: 16px;
 }
 
+/* Título no card */
 .cardRecent div h3 {
     color: var(--dark);
 }
 
+/* Parágrafo no card */
 .cardRecent div p {
     margin: 0;
 }
 
+/* Último card */
 .cardRecent.more {
     box-shadow: none;
     background-color: var(--ter-light);
@@ -55,10 +64,12 @@ section {
     justify-content: center;
 }
 
+/* Título no último card */
 .cardRecent.more h2 {
     font-weight: 900;
 }
 
+/* Imagem de destaque da página inicial */
 #sectionImage {
     width: 32vw;
     border-radius: 16px;
@@ -66,6 +77,7 @@ section {
     margin-left: 8vw;
 }
 
+/* Grupo da nossa história */
 #nossaH {
     display: flex;
     align-items: flex-start;
@@ -75,6 +87,7 @@ section {
     text-align: justify;
 }
 
+/* Negrito colorido */
 strong,
 h1,
 h2,

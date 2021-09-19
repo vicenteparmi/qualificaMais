@@ -1,3 +1,4 @@
+/* Imagem do post no blog */
 .imagePost {
     width: 30vw;
     float: left;
@@ -6,11 +7,13 @@
     border-radius: 8px;
 }
 
+/* Parágrafo do blog */
 p {
     max-width: 85vw;
     text-align: justify;
 }
 
+/* Descrição de publicação e data */
 .pubBy {
     margin-top: -16px;
     margin-bottom: 24px;

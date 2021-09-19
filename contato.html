@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
 </head>
-
+<script src="js/script.js"></script>
 <body>
     <header id="cabecalho">
         <img src="imagens/logo.svg" alt="Logo FLAVORA" id="logo">
@@ -27,7 +27,7 @@
         <!-- conteudo do cabeçalho -->
     </header>
     <h2>Converse com a gente!</h1>
-        <form action="index.html" method="POST">
+        <form action="index.html" method="POST" onchange="updateData()">
             <fieldset id="usuario">
                 <legend>Dados principais</legend>
                 <label for="nome">Nome completo: </label>
@@ -68,6 +68,19 @@
                 <legend>Mensagem</legend>
                 <textarea name="message" id="message" cols="120" rows="10"
                     placeholder="Escreva aqui a sua mensagem e após clique em enviar."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Confira seus dados antes de enviar</legend>
+                <p>
+                    Nome: <span id="fnome"></span><br>
+                    Idade: <span id="fidade"></span><br>
+                    Email: <span id="femail"></span><br>
+                    Telefone: <span id="ftelefone"></span><br>
+                    Endereço: <span id="fendereco"></span><br>
+                </p>
+                <p>
+                    Mensagem: "<span id="fmensagem"></span>"
+                </p>
             </fieldset>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar" onclick="alert('Mensagem enviada!')">
